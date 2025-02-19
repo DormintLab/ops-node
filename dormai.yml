@@ -1,0 +1,19 @@
+WALLET_ADDRESS: TNfQqz5yzXgBD1vCeJcaoWFZMbHaP4yD1P  # TRC20 wallet address
+
+
+ENV:
+  OP_TYPE: string
+  DORMINT_PIPE_ID: string
+
+
+CONTEXT: {}
+
+
+INPUTS:
+  A: string
+  B: string
+
+
+OUTPUTS:
+  A: string
+  B: string

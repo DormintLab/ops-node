@@ -1,0 +1,7 @@
+services:
+  ops-node:
+    build:
+      context: .
+    env_file: ".env"
+    command: ["python3", "main.py" ]
+    restart: always
