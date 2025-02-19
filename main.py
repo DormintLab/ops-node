@@ -1,4 +1,3 @@
-import argparse
 import asyncio
 import sys
 from pathlib import Path
@@ -10,7 +9,7 @@ async def main():
     async with AsyncDormAI(Path("./dormai.yml")) as dormai:
         event = {}
         op_type = dormai.settings["OP_TYPE"]
-
+        print(f"OP_TYPE={op_type}", file=sys.stderr)
         while True:
             inputs, context = await dormai.receive_event()
             if inputs is None:
